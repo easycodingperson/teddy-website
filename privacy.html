@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="ko" data-type="software" data-radius="soft" data-buttons="pill" data-motion>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TEDDY 개인정보 처리방침</title>
+<meta name="description" content="TEDDY가 어떤 정보를 이 PC에 저장하고, 사용자가 켰을 때 무엇을 AI 서비스와 구글 캘린더로 보내는지 설명합니다.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="TEDDY 개인정보 처리방침">
+<meta property="og:description" content="쪽지와 일정은 이 PC에 저장하고, 사용자가 켠 기능만 외부로 보냅니다.">
+<meta property="og:image" content="share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#fdf9f0">
+<meta name="site-kind" content="software">
+<meta name="page-type" content="software">
+<link rel="preload" href="fonts/SUIT-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/system.css">
+<link rel="stylesheet" href="assets/motion/motion.css">
+<style>
+:root {
+  --p-bg: #fdf9f0; --p-surface: #f6eedf; --p-ink: #2f2620; --p-muted: #6e5d4c;
+  --p-accent: #9c6b45; --p-accent-ink: #ffffff; --p-action: #8a5c39; --p-action-ink: #ffffff;
+  --p-inv-bg: #2f2620; --p-inv-surface: #3b322c; --p-inv-ink: #fdf9f0; --p-inv-muted: #c4b7a6;
+  --p-inv-accent: #e3b98d; --p-inv-accent-ink: #2f2620; --p-inv-action: #e3b98d; --p-inv-action-ink: #2f2620;
+  --font-display: "SUIT Variable", "Malgun Gothic", sans-serif;
+  --font-text: "SUIT Variable", "Malgun Gothic", sans-serif;
+  --font-mono: "SUIT Variable", "Malgun Gothic", sans-serif;
+  --display-weight: 600;
+  --display-tracking: -0.03em;
+  --display-tracking-xl: -0.035em;
+}
+</style>
+<link rel="stylesheet" href="site.css">
+<style>
+/* 문서 페이지: 화면 단위 구획 없이 읽는 글. 왼쪽에 차례, 오른쪽에 본문 */
+.doc { padding: calc(var(--nav) + var(--s-8)) 0 var(--s-9); }
+.doc__head { display: grid; gap: var(--s-4); padding-bottom: var(--s-7); border-bottom: 1px solid var(--line); }
+.doc__head h1 { font: var(--display-weight) clamp(36px, 4.4vw, 60px)/1.1 var(--font-display); letter-spacing: var(--display-tracking); margin: 0; }
+.doc__head p { margin: 0; max-width: 62ch; font-size: var(--t-lead); line-height: 1.6; color: var(--ink); }
+.doc__meta { font-size: var(--t-small); color: var(--muted); }
+.doc__body { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 8fr); gap: var(--s-6); margin-top: var(--s-7); }
+.doc__toc { position: relative; }
+.doc__toc ol { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--s-2); font-size: var(--t-small); }
+.doc__toc a { color: var(--muted); text-decoration: none; display: inline-block; padding: 6px 0; }
+.doc__toc a:hover { color: var(--ink); }
+.doc__text { max-width: 760px; }
+.doc__text h2 { font: var(--display-weight) 26px/1.3 var(--font-display); letter-spacing: -0.02em; margin: var(--s-8) 0 var(--s-4); scroll-margin-top: calc(var(--nav) + var(--s-5)); }
+.doc__text h2:first-child { margin-top: 0; }
+.doc__text h3 { font: 600 18px/1.4 var(--font-text); margin: var(--s-6) 0 var(--s-3); }
+.doc__text p, .doc__text li { font-size: 16px; line-height: 1.8; color: var(--ink); }
+.doc__text p { margin: 0 0 var(--s-4); }
+.doc__text ul { margin: 0 0 var(--s-4); padding-left: 1.2em; }
+.doc__text li + li { margin-top: var(--s-2); }
+.doc__text code { font: 500 14px/1 var(--font-text); background: var(--surface); padding: 2px 6px; border-radius: 6px; }
+.doc__table { width: 100%; border-collapse: collapse; margin: var(--s-4) 0 var(--s-5); font-size: 15px; }
+.doc__table th, .doc__table td { text-align: left; vertical-align: top; padding: 12px 14px; border-bottom: 1px solid var(--line); line-height: 1.6; }
+.doc__table th { width: 30%; font-weight: 600; background: var(--surface); }
+.doc__table thead th { background: none; font-size: 13px; color: var(--muted); font-weight: 500; }
+.doc__note { padding: var(--s-5); border-radius: var(--r-md); background: var(--surface); }
+.doc__note p:last-child { margin-bottom: 0; }
+.doc-footer { border-top: 1px solid var(--line); padding: var(--s-6) 0 calc(var(--s-7) + var(--bar, 0px)); font-size: var(--t-small); color: var(--muted); }
+.doc-footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--s-4); }
+.doc-footer a { color: inherit; }
+@media (max-width: 899px) {
+  .doc__body { grid-template-columns: minmax(0, 1fr); }
+  .doc__toc { display: none; }
+  .doc__table th { width: 36%; }
+}
+@media (min-width: 900px) { .doc__toc ol { position: sticky; top: calc(var(--nav) + var(--s-6)); } }
+</style>
+</head>
+<body>
+<header class="nav nav--centre">
+  <div class="wrap nav__bar">
+    <a class="skip-link" href="#top">본문으로 건너뛰기</a>
+    <a class="nav__logo" href="index.html"><img src="bear.svg" alt="" width="30" height="28">TEDDY</a>
+    <nav class="nav__links" aria-label="주 메뉴">
+      <div class="nav__item"><a class="nav__link" href="index.html#app">화면</a></div>
+      <div class="nav__item"><a class="nav__link" href="index.html#features">기능</a></div>
+      <div class="nav__item"><a class="nav__link" href="index.html#ai">AI</a></div>
+      <div class="nav__item"><a class="nav__link" href="index.html#privacy">개인정보</a></div>
+      <div class="nav__item"><a class="nav__link" href="index.html#faq">질문</a></div>
+    </nav>
+    <div class="nav__actions">
+      <a class="btn btn--primary" href="https://apps.microsoft.com/search?query=TEDDY">Microsoft Store에서 받기</a>
+    </div>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-label="메뉴">
+      <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 13h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <article class="doc wrap">
+    <div class="doc__head">
+      <p class="doc__meta">시행일 2026년 11월 17일</p>
+      <h1>TEDDY 개인정보 처리방침</h1>
+      <p>TEDDY는 Brity 메신저 쪽지를 읽어 할 일과 일정을 정리하는 Windows 프로그램입니다. 쪽지와 일정은 사용자의 PC에 저장하며, TEDDY 운영자는 이 정보를 받는 서버를 두지 않습니다. 사용자가 직접 켠 기능(AI 분류, 구글 캘린더 보내기)만 정보를 외부로 보냅니다.</p>
+    </div>
+
+    <div class="doc__body">
+      <nav class="doc__toc" aria-label="차례">
+        <ol>
+          <li><a href="#stored">1. 이 PC에 저장하는 정보</a></li>
+          <li><a href="#brity">2. Brity 메신저 쪽지를 읽는 방법</a></li>
+          <li><a href="#ai">3. AI 분류를 켰을 때</a></li>
+          <li><a href="#google">4. 구글 캘린더로 보낼 때</a></li>
+          <li><a href="#share">5. 제3자 제공과 판매</a></li>
+          <li><a href="#keep">6. 보관 기간과 삭제</a></li>
+          <li><a href="#safety">7. 안전하게 지키는 방법</a></li>
+          <li><a href="#students">8. 학생과 학부모 정보</a></li>
+          <li><a href="#rights">9. 이용자의 권리</a></li>
+          <li><a href="#change">10. 방침의 변경과 문의</a></li>
+        </ol>
+      </nav>
+
+      <div class="doc__text">
+        <h2 id="stored">1. 이 PC에 저장하는 정보</h2>
+        <p>아래 정보는 사용자의 Windows 계정 폴더(<code>%APPDATA%\TEDDY</code>)에만 저장됩니다.</p>
+        <table class="doc__table">
+          <thead><tr><th scope="col">정보</th><th scope="col">내용</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">가져온 쪽지</th><td>쪽지 제목, 본문, 보낸 사람, 보낸 사람의 소속, 보낸 시각, 수신자 목록, 첨부파일의 이름과 위치</td></tr>
+            <tr><th scope="row">프로필</th><td>별명, 소속 기관과 학교급, 교사·교직원 구분, 담임 여부와 학년·반, 담당 교과, 소속 부서, 직위, 담당 업무</td></tr>
+            <tr><th scope="row">일정</th><td>제목, 내용, 날짜와 시각, 장소, 반복, 태그, 참고자료 파일의 경로, 완료·중요 표시</td></tr>
+            <tr><th scope="row">설정</th><td>동기화 예약, 단축키, AI 연결 방식, API 키, 구글 캘린더 연결 정보</td></tr>
+          </tbody>
+        </table>
+        <p>API 키와 구글 로그인 정보(갱신 토큰)는 Windows가 제공하는 암호화 저장 기능으로 암호화해 저장합니다.</p>
+
+        <h2 id="brity">2. Brity 메신저 쪽지를 읽는 방법</h2>
+        <p>TEDDY는 사용자가 ‘지금 동기화’를 누르거나 예약한 시각이 되면, 이 PC에 열려 있는 Brity 메신저 창의 내용을 Windows의 화면 읽기 기능(UI Automation)으로 읽습니다. Brity 메신저의 서버에 접속하거나 Brity 계정의 비밀번호를 다루지 않습니다.</p>
+
+        <h2 id="ai">3. AI 분류를 켰을 때</h2>
+        <p>AI 분류는 처음에 꺼져 있습니다. 꺼져 있으면 쪽지는 이 PC 안의 규칙으로만 분류되고 인터넷으로 보내지지 않습니다.</p>
+        <p>사용자가 AI 분류를 켜면, 고른 서비스로 아래 정보를 보내 분류를 요청합니다. 보내는 곳은 OpenAI(ChatGPT), Anthropic(Claude), Google(Gemini) 가운데 사용자가 연결한 곳, 또는 사용자가 직접 입력한 API 주소입니다.</p>
+        <table class="doc__table">
+          <tbody>
+            <tr><th scope="row">보내는 정보</th><td>쪽지 제목과 본문, 보낸 시각, 보낸 사람의 소속, 분류에 쓰는 업무 프로필(소속 기관과 부서, 학년·반, 직위와 담당 업무)</td></tr>
+            <tr><th scope="row">보내지 않는 정보</th><td>Brity 수신자 목록, 첨부파일의 이름·내용·경로, 프로필 별명, 사용자가 직접 만든 일정과 메모, 본문에 인용된 이전 쪽지</td></tr>
+            <tr><th scope="row">가려서 보내는 정보</th><td>개인정보 전송 최소화(기본값 켜짐)가 켜져 있으면, 규칙으로 찾은 학생·학부모 이름, 연락처, 주소, 주민등록번호, 계좌번호, 건강·가정 형편에 관한 내용을 가리고, 보낸 사람의 이름은 빼고 보냅니다.</td></tr>
+          </tbody>
+        </table>
+        <p>규칙이 찾지 못한 개인정보는 그대로 전송될 수 있습니다. 보낸 정보는 각 서비스의 개인정보 처리방침에 따라 처리됩니다. TEDDY는 AI 서비스의 응답(분류 결과)만 이 PC에 저장합니다.</p>
+
+        <h2 id="google">4. 구글 캘린더로 보낼 때</h2>
+        <p>구글 캘린더 보내기는 사용자가 설정에서 자기 구글 계정을 연결했을 때만 동작합니다. 일정은 연결한 사용자 본인의 구글 계정으로만 보내지며, TEDDY 운영자를 거치지 않습니다.</p>
+        <h3>요청하는 권한</h3>
+        <p>TEDDY는 구글 계정에 <code>https://www.googleapis.com/auth/calendar.app.created</code> 권한 하나만 요청합니다. 이 권한으로 TEDDY는 자신이 만든 캘린더와 그 안의 일정만 만들고, 고치고, 지울 수 있습니다. 사용자의 다른 캘린더와 일정, Gmail, 연락처, 드라이브 등 다른 구글 데이터는 읽거나 바꾸지 않습니다.</p>
+        <h3>보내는 정보</h3>
+        <p>연결하면 사용자의 구글 계정에 ‘TEDDY’ 캘린더를 하나 만들고, 그 안에 일정의 제목, 날짜와 시각, 장소, 내용(분류와 메모), 반복 규칙, 완료·중요 표시를 보냅니다. 쪽지 원문과 프로필은 보내지 않습니다.</p>
+        <h3>구글 사용자 데이터의 제한적 사용</h3>
+        <div class="doc__note">
+          <p>TEDDY가 Google API에서 받은 정보를 사용하고 다른 앱으로 옮기는 일은 제한적 사용 요건을 포함한 <a class="link" href="https://developers.google.com/terms/api-services-user-data-policy">Google API 서비스 사용자 데이터 정책</a>을 따릅니다.</p>
+          <p>TEDDY는 구글에서 받은 정보를 사용자가 요청한 일정 보내기에만 쓰며, 광고에 쓰거나 다른 사람에게 넘기거나 팔지 않습니다. 사람이 이 정보를 읽는 일도 없습니다.</p>
+        </div>
+
+        <h2 id="share">5. 제3자 제공과 판매</h2>
+        <p>TEDDY 운영자는 사용자의 정보를 받지 않으므로 제3자에게 제공하거나 판매하지 않습니다. TEDDY에는 광고나 이용 통계 수집 도구가 들어 있지 않습니다. 위 3, 4항처럼 사용자가 켠 기능에서 정보를 보내는 곳은 사용자가 고른 서비스뿐입니다.</p>
+
+        <h2 id="keep">6. 보관 기간과 삭제</h2>
+        <ul>
+          <li>이 PC의 정보는 사용자가 지울 때까지 보관됩니다. 설정의 데이터 관리에서 ‘데이터 초기화’를 누르면 프로필, 일정, 쪽지, 설정이 모두 지워집니다.</li>
+          <li>프로그램을 지워도 기록 폴더가 남을 수 있으니, 기록을 모두 지우려면 먼저 데이터 초기화를 하세요.</li>
+          <li>구글 연결은 설정에서 ‘연결 끊기’로 끊을 수 있고, <a class="link" href="https://myaccount.google.com/permissions">구글 계정의 서드파티 연결 관리</a>에서도 TEDDY의 권한을 거둘 수 있습니다. 이미 보낸 TEDDY 캘린더는 구글 캘린더에서 직접 지울 수 있습니다.</li>
+          <li>AI 서비스로 보낸 정보의 보관은 각 서비스의 방침을 따릅니다.</li>
+        </ul>
+
+        <h2 id="safety">7. 안전하게 지키는 방법</h2>
+        <ul>
+          <li>API 키와 구글 갱신 토큰은 Windows의 암호화 저장 기능으로 암호화합니다.</li>
+          <li>구글 로그인은 사용자의 웹브라우저에서 구글 화면으로 직접 하며, TEDDY는 구글 비밀번호를 받지 않습니다.</li>
+          <li>모든 외부 통신은 HTTPS로 암호화됩니다.</li>
+          <li>PC에 저장된 정보는 그 PC의 Windows 계정 보안에 따라 보호되므로, PC 잠금과 계정 비밀번호를 지켜 주세요.</li>
+        </ul>
+
+        <h2 id="students">8. 학생과 학부모 정보</h2>
+        <p>학교 쪽지에는 학생과 학부모의 정보가 들어 있을 수 있습니다. TEDDY는 이 정보를 이 PC에만 저장하며, AI 분류를 켠 경우에도 개인정보 전송 최소화로 찾은 이름과 연락처를 가리고 보냅니다. TEDDY는 아동이 직접 쓰는 프로그램이 아니며, 아동으로부터 정보를 받지 않습니다.</p>
+
+        <h2 id="rights">9. 이용자의 권리</h2>
+        <p>사용자는 언제든 TEDDY 화면에서 자신의 정보를 보고, 고치고, 지울 수 있습니다. AI 분류와 구글 캘린더 보내기는 언제든 끌 수 있습니다. 정보가 운영자에게 저장되지 않으므로, 열람이나 삭제는 사용자의 PC에서 바로 할 수 있습니다.</p>
+
+        <h2 id="change">10. 방침의 변경과 문의</h2>
+        <p>이 방침이 바뀌면 이 페이지에 새 시행일과 함께 알립니다. 개인정보에 관한 문의는 <a class="link" href="mailto:privacy@teddy.example">이메일로 보내 주세요</a>.</p>
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer class="doc-footer">
+  <div class="wrap">
+    <span>&copy; 2026 TEDDY</span>
+    <span><a href="index.html">TEDDY 소개</a> · 제품 이름과 로고는 각 소유자의 상표입니다.</span>
+  </div>
+</footer>
+
+<nav class="actionbar" aria-label="빠른 실행">
+  <a class="btn btn--primary" href="https://apps.microsoft.com/search?query=TEDDY">Microsoft Store에서 받기</a>
+</nav>
+
+<script type="module" src="assets/system.js"></script>
+<script type="module" src="assets/motion/motion.js"></script>
+</body>
+</html>

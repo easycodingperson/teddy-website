@@ -1,0 +1,33 @@
+# 검사 결과와 스크린샷
+shots/
+.taste-skill/
+
+# 디자인 키트는 이 사이트가 실제로 불러오는 파일만 올린다
+assets/**
+!assets/**/
+!assets/system.css
+!assets/system.js
+!assets/backgrounds/backgrounds.css
+!assets/backgrounds/backgrounds.js
+!assets/diagrams/diagram.css
+!assets/diagrams/diagram.js
+!assets/diagrams/mount.js
+!assets/icons/icon.css
+!assets/icons/icons-credits.json
+!assets/icons/claude.svg
+!assets/icons/gemini.svg
+!assets/icons/google-calendar.svg
+!assets/icons/openai.svg
+!assets/icons/ui-inbox.svg
+!assets/icons/windows.svg
+!assets/layout/layout.css
+!assets/layout/layout.js
+!assets/moments/lib.js
+!assets/moments/moments.js
+!assets/moments/line-carries-colour/moment.css
+!assets/moments/line-carries-colour/moment.js
+!assets/motion/motion.css
+!assets/motion/motion.js
+!assets/ui/base.css
+!assets/ui/cards.css
+!assets/ui/ui.js
