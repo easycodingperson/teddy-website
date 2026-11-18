@@ -8,7 +8,7 @@ TEDDY(경기도 교직원을 위한 업무 일정 비서)의 소개 페이지와
 - `assets/`: 레이아웃, 버튼, 움직임 등 공통 디자인 시스템
 - `fonts/SUIT-Variable.woff2`: TEDDY 프로그램과 같은 글꼴 (SIL Open Font License)
 
-바꿔야 할 것: Microsoft Store 앱 주소(지금은 검색 주소), 문의 이메일(지금은 `.example` 임시 주소), 도메인이 정해지면 canonical 주소.
+바꿔야 할 것: Microsoft Store 앱 주소(지금은 검색 주소), 도메인이 정해지면 canonical 주소.
 
 ## version.json (업데이트 확인)
 
