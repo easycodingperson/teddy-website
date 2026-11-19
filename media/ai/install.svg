@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280" font-family="Malgun Gothic, Apple SD Gothic Neo, sans-serif">
+<rect x="0" y="0" width="640" height="280" rx="16" fill="#e6ebdd" stroke="none"/>
+<rect x="29" y="24" width="582" height="232" rx="10" fill="#fffdf7" stroke="#b7bfaf"/>
+<path d="M39 24h562q10 0 10 10v36H29V34q0-10 10-10" fill="#344c40"/>
+<text x="50" y="55" font-size="21" fill="#fffdf7" font-weight="550">Windows    ·    앱 설치하기</text>
+<text x="53" y="113" font-size="20" fill="#293b32" font-weight="550">공식 내려받기 페이지</text>
+<rect x="53" y="133" width="230" height="44" rx="7" fill="#315841" stroke="none"/>
+<text x="168" y="155" text-anchor="middle" dominant-baseline="central" font-size="19" fill="#fffdf7" font-weight="550">Windows용 다운로드</text>
+<path d="M303 155h20m-6-6 6 6-6 6" fill="none" stroke="#293b32" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="345" y="153" font-size="23" fill="#293b32" font-weight="550">설치 파일 열기</text>
+<text x="345" y="186" font-size="19" fill="#293b32" font-weight="550">또는 스토어에서 설치</text>
+<text x="53" y="227" font-size="18" fill="#293b32" font-weight="550">설치 후 시작 메뉴에서 앱 이름을 검색하세요.</text>
+</svg>

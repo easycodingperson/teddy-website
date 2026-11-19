@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280" font-family="Malgun Gothic, Apple SD Gothic Neo, sans-serif">
+  <rect width="640" height="280" rx="16" fill="#e6ebdd"/>
+  <rect x="29" y="24" width="582" height="232" rx="10" fill="#fffdf7" stroke="#b7bfaf"/>
+  <path d="M39 24h562q10 0 10 10v36H29V34q0-10 10-10" fill="#344c40"/>
+  <g font-size="21"><text x="50" y="55" fill="white">TEDDY   ›   제미나이 설치 안내</text>
+  <text x="50" y="117" fill="#293b32">Antigravity CLI 설치하기</text>
+  <g text-anchor="middle" dominant-baseline="central">
+    <rect x="50" y="147" width="236" height="46" rx="8" fill="#f2f1e8"/>
+    <text x="168" y="170" fill="#293b32">공식 설치 안내 열기</text>
+    <rect x="302" y="147" width="188" height="46" rx="8" fill="#315841"/>
+    <text x="396" y="170" fill="white">설치 명령 복사</text>
+  </g>
+  <text x="50" y="230" fill="#394b3d" font-size="18">이 단추를 누르면 설치에 필요한 한 줄이 복사돼요.</text></g>
+</svg>
