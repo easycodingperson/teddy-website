@@ -31,3 +31,6 @@ assets/**
 !assets/ui/base.css
 !assets/ui/cards.css
 !assets/ui/ui.js
+
+# 설치 파일은 GitHub 릴리스에 올린다(100 MiB 상한)
+downloads/

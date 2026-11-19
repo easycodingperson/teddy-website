@@ -1,5 +1,7 @@
 {
-  "version": "0.5.13",
-  "download": "https://apps.microsoft.com/search?query=TEDDY",
-  "notes": ""
+  "version": "1.0.1",
+  "download": "https://github.com/easycodingperson/teddy-website/releases/download/v1.0.1/TEDDY-Setup-1.0.1.exe",
+  "sha256": "1e39af2bb0ee55af010a29a04b054c9fb42ab965656f6e0c194045febbc17432",
+  "size": 126842814,
+  "notes": "프로그램 안에서 바로 업데이트할 수 있어요."
 }

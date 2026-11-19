@@ -1,17 +1,14 @@
 # TEDDY 소개 사이트
 
-TEDDY(경기도 교직원을 위한 업무 일정 비서)의 소개 페이지와 개인정보 처리방침입니다. 정적 HTML이라 어떤 웹 호스팅에도 그대로 올릴 수 있습니다.
+`index.html`을 브라우저로 열면 로컬에서 페이지, 쪽지 예시, 소개 영상과 설치 파일 다운로드를 확인할 수 있습니다.
 
-- `index.html`: 소개 페이지
-- `privacy.html`: 개인정보 처리방침 (구글 OAuth 검토용 주소로 씀)
-- `site.css`: 화면 속 TEDDY 창 그림과 페이지 고유 스타일
-- `assets/`: 레이아웃, 버튼, 움직임 등 공통 디자인 시스템
-- `fonts/SUIT-Variable.woff2`: TEDDY 프로그램과 같은 글꼴 (SIL Open Font License)
+- 설치 파일은 저장소에 넣지 않고(100 MiB 상한) 이 저장소의 GitHub 릴리스(`v<버전>`)에 `TEDDY-Setup-<버전>.exe`로 올립니다.
+- `media/banner.webp`는 상단 배너이며, `consult.webp`, `briefing.webp`, `meeting.webp`는 일정별 교사 장면입니다.
+- `media/teddy-promo.mp4`는 홈페이지용 소개 영상입니다. 엔딩은 TEDDY 로고와 제품 소개 문구로 마무리합니다.
 
-바꿔야 할 것: Microsoft Store 앱 주소(지금은 검색 주소), 도메인이 정해지면 canonical 주소.
+## 버전 변경
 
-## version.json (업데이트 확인)
-
-TEDDY 프로그램의 [설정 → 업데이트 확인]이 이 파일을 읽습니다(`https://easycodingperson.github.io/teddy-website/version.json`).
-새 버전을 내놓을 때마다 `version`을 그 버전으로 바꾸고, `download`에 받는 곳(스토어 앱 주소, https만)을 적습니다. `notes`에는 바뀐 점을 한두 줄로 적을 수 있습니다.
-Microsoft Store로 설치한 TEDDY는 `download` 대신 스토어의 업데이트 화면을 엽니다.
+1. 프로그램에서 `npm run dist`로 `dist/TEDDY-Setup-<버전>.exe`를 만듭니다.
+2. 이 저장소에 릴리스를 만들고 설치 파일을 올립니다: `gh release create v<버전> <설치 파일> --title "TEDDY <버전>"`
+3. `index.html`, `privacy.html`의 다운로드 주소와 버전 표시를 새 릴리스 주소로 바꿉니다.
+4. `version.json`의 `version`, `download`, `sha256`(설치 파일의 SHA-256), `size`(바이트)를 바꿉니다. 프로그램은 이 파일을 보고 새 버전을 알리고, 내려받은 파일의 SHA-256과 크기가 맞을 때만 설치합니다.
