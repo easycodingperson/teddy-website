@@ -41,8 +41,7 @@ h3 { font-size: 1.35rem }
 .home { scroll-padding-top: calc(77px + .75rem) }
 .home .mast { position: sticky; top: 0; z-index: 5 }
 .mast-inner { min-height: 76px; display: flex; gap: clamp(18px,3vw,46px); align-items: center }
-.brand { display: inline-flex; align-items: center; gap: 9px; text-decoration: none; font-size: 1.9rem; letter-spacing: -.075em; font-weight: 930; line-height: 1; color: #222a3b }
-.mast .brand { letter-spacing: -.035em }
+.brand { display: inline-flex; align-items: center; gap: 9px; text-decoration: none; font-size: 1.9rem; letter-spacing: 0; font-weight: 930; line-height: 1; color: #222a3b }
 .brand img { width: 35px; height: auto }
 .mast nav { margin-left: auto; display: flex; align-items: center; gap: clamp(16px,2.3vw,36px) }
 .mast nav a,.release-link { text-decoration: none; font-size: .93rem; font-weight: 730 }
