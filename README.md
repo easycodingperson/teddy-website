@@ -10,5 +10,5 @@
 
 1. 프로그램에서 `npm run dist`로 `dist/TEDDY-Setup-<버전>.exe`를 만듭니다.
 2. 이 저장소에 릴리스를 만들고 설치 파일을 올립니다: `gh release create v<버전> <설치 파일> --title "TEDDY <버전>"`
-3. `index.html`, `privacy.html`의 다운로드 주소와 버전 표시를 새 릴리스 주소로 바꿉니다.
+3. `download.html`의 설치 파일 주소·이름·크기와 `index.html`의 버전·크기 표시를 갱신합니다. 소개 페이지와 개인정보 처리방침의 다운로드 버튼은 `download.html#start`로 연결됩니다.
 4. `version.json`의 `version`, `download`, `sha256`(설치 파일의 SHA-256), `size`(바이트)를 바꿉니다. 프로그램은 이 파일을 보고 새 버전을 알리고, 내려받은 파일의 SHA-256과 크기가 맞을 때만 설치합니다.
