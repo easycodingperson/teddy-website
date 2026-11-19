@@ -42,6 +42,7 @@ h3 { font-size: 1.35rem }
 .home .mast { position: sticky; top: 0; z-index: 5 }
 .mast-inner { min-height: 76px; display: flex; gap: clamp(18px,3vw,46px); align-items: center }
 .brand { display: inline-flex; align-items: center; gap: 9px; text-decoration: none; font-size: 1.9rem; letter-spacing: -.075em; font-weight: 930; line-height: 1; color: #222a3b }
+.mast .brand { letter-spacing: -.035em }
 .brand img { width: 35px; height: auto }
 .mast nav { margin-left: auto; display: flex; align-items: center; gap: clamp(16px,2.3vw,36px) }
 .mast nav a,.release-link { text-decoration: none; font-size: .93rem; font-weight: 730 }
@@ -191,7 +192,7 @@ kbd { border: 1px solid #a6a795; border-bottom-width: 2px; border-radius: 3px; p
 .doc__toc ol{position:sticky;top:20px;list-style:none;margin:0;padding:14px 18px;background:#eeeee3;border-top:2px solid var(--blue)}
 .doc__toc a{display:block;padding:4px 0;color:var(--muted);font-size:.9rem;text-decoration:none}
 .doc__toc a:hover{text-decoration:underline}
-.doc__text h2{margin:40px 0 14px;font-size:1.52rem;scroll-margin-top:1rem}
+.doc__text h2{margin:40px 0 14px;font-size:1.52rem;letter-spacing:-.025em;scroll-margin-top:1rem}
 .doc__text h2:first-child{margin-top:0}
 .doc__text h3{margin:20px 0 8px;font-size:1.13rem}
 .doc__text p,.doc__text ul{margin:0 0 12px}
