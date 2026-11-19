@@ -285,6 +285,7 @@ kbd { border: 1px solid #a6a795; border-bottom-width: 2px; border-radius: 3px; p
 .ai-date b { display:block; font:700 1.8rem/1.3 var(--serif) }
 .ai-guide figure img { width:100%; height:auto }
 .ai-pill { margin-top:22px; border-radius:999px }
+.ai-note-disclaimer { margin-top:12px; color:var(--muted); font-size:.9rem }
 .ai-guide { max-width:850px; padding-block:clamp(36px,5vw,74px) }
 .ai-guide-intro { border-bottom:2px solid #49684c; padding-bottom:24px }
 .ai-guide h1 { margin-bottom:15px; font-size:clamp(2.1rem,4vw,3.5rem) }
