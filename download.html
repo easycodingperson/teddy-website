@@ -36,7 +36,15 @@
   <ol class="install-steps">
     <li><h3>내려받은 파일 찾기</h3><p>파일을 저장할지 물으면 <strong>저장</strong>을 선택하세요. 브라우저 오른쪽 위의 다운로드 목록을 열거나 <kbd>Ctrl</kbd> + <kbd>J</kbd>를 누르면 진행 상황을 볼 수 있어요. 다운로드가 끝나면 파일 이름 옆의 폴더 아이콘을 눌러 저장 위치를 여세요.</p>
       <figure class="step-figure">
-        <img src="media/install/download-list.png" width="1000" height="330" loading="lazy" alt="다운로드 완료된 TEDDY 설치 파일 오른쪽에 폴더 아이콘이 강조된 화면 예시">
+        <div class="installer-preview">
+          <div class="installer-window">
+            <div class="installer-folder">다운로드 <kbd>Ctrl + J</kbd></div>
+            <div class="installer-download-row">
+              <div><strong>TEDDY-Setup.exe</strong><small>다운로드 완료</small></div>
+              <div class="installer-folder-highlight" role="img" aria-label="강조된 폴더 아이콘"><span class="installer-folder-icon" aria-hidden="true"></span></div>
+            </div>
+          </div>
+        </div>
         <figcaption>브라우저 화면 예시 · 폴더 아이콘을 누르면 파일이 저장된 위치가 열려요.</figcaption>
       </figure>
     </li>
@@ -44,7 +52,7 @@
       <figure class="step-figure">
         <div class="installer-preview">
           <div class="installer-window">
-            <div class="installer-folder"><span aria-hidden="true"></span>다운로드</div>
+            <div class="installer-folder"><span class="installer-folder-icon" aria-hidden="true"></span>다운로드</div>
             <div class="installer-selection">
               <span class="installer-icon" aria-hidden="true"></span>
               <strong>TEDDY-Setup.exe</strong>
@@ -61,7 +69,16 @@
         <figcaption>① 처음 보이는 화면에서 ‘추가 정보’를 누르세요.</figcaption>
       </figure>
       <figure class="step-figure">
-        <img src="media/install/smartscreen-run.png" width="1000" height="405" loading="lazy" alt="앱 이름이 표시되고 하단에 실행과 실행 안 함 버튼이 있는 예시. 실행 버튼이 강조되어 있다.">
+        <div class="installer-preview">
+          <div class="installer-protection">
+            <strong class="installer-protection-title">Windows의 PC 보호</strong>
+            <div class="installer-app-name"><b>앱</b> <span>TEDDY-Setup.exe</span></div>
+            <div class="installer-actions">
+              <span class="installer-action installer-action-run"><span>실행</span></span>
+              <span class="installer-action"><span>실행 안 함</span></span>
+            </div>
+          </div>
+        </div>
         <figcaption>② 앱 이름을 확인한 뒤 ‘실행’을 누르세요. Windows 버전에 따라 화면은 조금 다를 수 있어요.</figcaption>
       </figure>
     </li>

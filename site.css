@@ -335,7 +335,19 @@ kbd { border: 1px solid #a6a795; border-bottom-width: 2px; border-radius: 3px; p
 .installer-preview { padding:clamp(10px,2vw,20px); border:1px solid #cfcec2; border-radius:8px; background:#f0f1ea }
 .installer-window { padding:clamp(12px,2vw,21px); border:1px solid #b9c7d3; border-radius:9px; background:#fcfdfe }
 .installer-folder { display:flex; align-items:center; gap:12px; padding-bottom:12px; border-bottom:1px solid #d0d8df; font-size:clamp(1.2rem,2.1vw,1.75rem); font-weight:750 }
-.installer-folder span { flex:none; width:1.5em; height:1.12em; background:#ffda77; clip-path:polygon(0 0,36% 0,45% 18%,100% 18%,100% 100%,0 100%) }
+.installer-folder-icon { flex:none; width:1.5em; height:1.12em; background:#ffda77; clip-path:polygon(0 0,36% 0,45% 18%,100% 18%,100% 100%,0 100%) }
+.installer-folder kbd { margin-left:auto; border:0; border-radius:8px; padding:3px 10px; background:#eef1f4; font-size:.7em; white-space:nowrap }
+.installer-download-row { display:flex; align-items:center; justify-content:space-between; gap:12px; padding-top:12px }
+.installer-download-row strong { font-size:clamp(1rem,2.1vw,1.65rem); line-height:1.2 }
+.installer-download-row small { display:block; margin-top:6px; color:#4c5b6a; font-size:clamp(.875rem,1.7vw,1.35rem) }
+.installer-folder-highlight { display:grid; place-items:center; flex:none; width:clamp(44px,8vw,80px); aspect-ratio:1.15; border:3px solid #1459a7; border-radius:8px; background:#ecf3fc; font-size:clamp(1.2rem,2.3vw,1.75rem) }
+.installer-protection { padding:clamp(16px,2.8vw,30px); border-radius:5px; background:#0d619c; color:#fff }
+.installer-protection-title { display:block; font-size:clamp(1.2rem,3vw,2rem); line-height:1.25 }
+.installer-app-name { display:flex; align-items:baseline; gap:clamp(10px,3vw,32px); margin-top:10px; font-size:clamp(1rem,2.1vw,1.5rem) }
+.installer-app-name b { font-size:.8em }
+.installer-actions { display:flex; justify-content:flex-end; flex-wrap:wrap; gap:12px; margin-top:clamp(22px,5vw,48px) }
+.installer-action { display:grid; place-items:center; min-width:clamp(76px,11vw,130px); min-height:48px; padding:8px clamp(10px,2vw,22px); border-radius:4px; background:#e2eef6; color:#202735; font-size:clamp(1rem,1.8vw,1.35rem); line-height:1.25; text-align:center }
+.installer-action-run { background:#fff0ac; font-weight:750 }
 .installer-selection { display:flex; align-items:center; gap:clamp(8px,1.2vw,14px); min-height:66px; margin-top:14px; padding:8px clamp(8px,1.4vw,14px); border:2px solid #1459a7; border-radius:6px; background:#e2f0fc; color:#202735 }
 .installer-selection strong { font-size:clamp(1rem,2.1vw,1.65rem); line-height:1.2 }
 .installer-icon { flex:none; width:1.2em; height:1em; border:2px solid #1459a7; border-top-width:5px; border-radius:3px; background:#fff }
