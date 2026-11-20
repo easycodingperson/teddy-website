@@ -332,6 +332,15 @@ kbd { border: 1px solid #a6a795; border-bottom-width: 2px; border-radius: 3px; p
 .step-figure { margin:18px 0 0; width:min(100%,660px) }
 .step-figure img { width:100%; height:auto; background:#edece3; border:1px solid #cfcec2; border-radius:8px }
 .step-figure figcaption { margin-top:6px }
+.installer-preview { padding:clamp(10px,2vw,20px); border:1px solid #cfcec2; border-radius:8px; background:#f0f1ea }
+.installer-window { padding:clamp(12px,2vw,21px); border:1px solid #b9c7d3; border-radius:9px; background:#fcfdfe }
+.installer-folder { display:flex; align-items:center; gap:12px; padding-bottom:12px; border-bottom:1px solid #d0d8df; font-size:clamp(1.2rem,2.1vw,1.75rem); font-weight:750 }
+.installer-folder span { flex:none; width:1.5em; height:1.12em; background:#ffda77; clip-path:polygon(0 0,36% 0,45% 18%,100% 18%,100% 100%,0 100%) }
+.installer-selection { display:flex; align-items:center; gap:clamp(8px,1.2vw,14px); min-height:66px; margin-top:14px; padding:8px clamp(8px,1.4vw,14px); border:2px solid #1459a7; border-radius:6px; background:#e2f0fc; color:#202735 }
+.installer-selection strong { font-size:clamp(1rem,2.1vw,1.65rem); line-height:1.2 }
+.installer-icon { flex:none; width:1.2em; height:1em; border:2px solid #1459a7; border-top-width:5px; border-radius:3px; background:#fff }
+.installer-type { margin-left:auto; white-space:nowrap; color:#4c5b6a }
+@media(max-width:480px) { .installer-type { display:none } }
 .back-home { margin-top:15px; text-underline-offset:4px }
 @media(max-width:700px) {
   .pricing-inner { min-height:0; align-items:start; padding:36px 0 calc(min(68vw,325px) + 12px) }
