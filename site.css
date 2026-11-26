@@ -286,6 +286,11 @@ kbd { border: 1px solid #a6a795; border-bottom-width: 2px; border-radius: 3px; p
 .ai-guide figure img { width:100%; height:auto }
 .ai-pill { margin-top:22px; border-radius:999px }
 .ai-note-disclaimer { margin-top:12px; color:var(--muted); font-size:.9rem }
+.agent-steps { margin:20px 0 0; padding-left:1.3em; line-height:1.7; color:var(--muted) }
+.agent-steps li + li { margin-top:8px }
+.agent-steps li::marker { font-weight:800; color:#315841 }
+.agent-steps b { color:var(--ink, inherit) }
+.ai-entry + .ai-entry { margin-top:12px }
 .ai-guide { max-width:850px; padding-block:clamp(36px,5vw,74px) }
 .ai-guide-intro { border-bottom:2px solid #49684c; padding-bottom:24px }
 .ai-guide h1 { margin-bottom:15px; font-size:clamp(2.1rem,4vw,3.5rem) }

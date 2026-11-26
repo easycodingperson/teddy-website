@@ -154,9 +154,36 @@
       </div>
     </figure>
   </section>
+  <section class="section wrap ai-overview" id="ai-agent" aria-labelledby="ai-agent-title">
+    <div class="ai-intro">
+      <p class="section-label">새 기능 · AI 비서 연결</p>
+      <h2 id="ai-agent-title">AI에게 말하면,<br>달력에 들어와요</h2>
+      <p class="ai-description">Claude, ChatGPT(Codex), Gemini(Antigravity)에 업무 계획이나 공문을 올리고 “TEDDY에 일정 등록해 줘”라고 말해 보세요. AI가 자료에서 일정을 찾아 TEDDY 달력에 바로 넣어요.</p>
+      <ol class="agent-steps">
+        <li><b>TEDDY 설정 → AI 비서 연결</b>에서 쓰는 AI 앱의 <b>연결하기</b>를 누르세요. 켜져 있는 AI 앱은 TEDDY가 다시 켜 줘요.</li>
+        <li>AI 앱에 자료를 올리고 무엇을 등록할지 말하세요. 일정 보기, 고치기, 반복 일정으로 바꾸기도 부탁할 수 있어요.</li>
+        <li>등록된 일정은 TEDDY에 <b>NEW</b>와 ‘AI 비서 등록’ 표시로 보여요. 같은 일정은 두 번 넣지 않아요.</li>
+      </ol>
+      <p class="ai-note-disclaimer">※ AI 앱이 TEDDY를 쓰기 전에 허락을 물어요. AI에는 일정 정보와 업무 프로필만 보내고, Brity 쪽지 본문은 보내지 않아요.</p>
+    </div>
+    <figure class="ai-example" aria-label="AI 앱에 업무 계획을 올리고 TEDDY에 일정을 등록한 예시">
+      <div class="ai-note">
+        <p class="ai-note-source">Claude에게 · 2학기 5학년 업무 계획.hwpx</p>
+        <blockquote>“이 자료에서 <mark>내가 할 일만</mark> TEDDY에 일정으로 등록해 줘.”</blockquote>
+      </div>
+      <div class="ai-entry">
+        <div class="ai-date"><span>12월</span><b>3</b></div>
+        <div><p>TEDDY에 등록된 일정 · 매주 목요일</p><strong>5학년 학년 협의회</strong><time datetime="2026-12-03T15:30">오후 3시 30분 · 5학년 연구실</time></div>
+      </div>
+      <div class="ai-entry">
+        <div class="ai-date"><span>12월</span><b>4</b></div>
+        <div><p>TEDDY에 등록된 일정 · 중요</p><strong>학부모 상담 주간 계획 제출</strong><time datetime="2026-12-04">마감</time></div>
+      </div>
+    </figure>
+  </section>
   <section class="info-band" id="ai" aria-labelledby="ai-title"><div class="wrap info-grid">
     <div><p class="section-label">AI와 개인정보</p><h2 id="ai-title">기본 분류는 <br>내 PC 안에서.</h2><p>처음에는 AI가 꺼져 있어요. 쪽지와 일정은 내 Windows 계정에 저장되고, PC 안의 규칙만으로도 분류할 수 있어요.</p><a class="under" href="privacy.html">개인정보 처리방침 읽기</a></div>
-    <dl id="privacy"><div><dt>AI를 연결하면</dt><dd>ChatGPT, Claude, Gemini 구독 계정이나 API 키를 연결해 분류할 수 있어요. 직접 지정한 API 서버도 지원해요.</dd></div><div><dt>AI가 받는 정보</dt><dd>쪽지 제목과 본문, 발신 시각과 소속, 업무 프로필을 선택한 서비스에 보내요. 단축키로 일정을 등록할 때는 선택한 글도 보내요. 수신자 목록과 첨부파일은 분류 요청에서 제외해요.</dd></div><div><dt>개인정보 가리기</dt><dd>기본으로 켜진 ‘개인정보 전송 최소화’가 규칙으로 찾은 이름과 연락처를 가려요. 규칙이 놓친 정보는 전송될 수 있어요.</dd></div></dl>
+    <dl id="privacy"><div><dt>AI를 연결하면</dt><dd>ChatGPT, Claude, Gemini 구독 계정이나 API 키를 연결해 분류할 수 있어요. 직접 지정한 API 서버도 지원해요.</dd></div><div><dt>AI가 받는 정보</dt><dd>쪽지 제목과 본문, 발신 시각과 소속, 업무 프로필을 선택한 서비스에 보내요. 단축키로 일정을 등록할 때는 선택한 글도 보내요. 수신자 목록과 첨부파일은 분류 요청에서 제외해요.</dd></div><div><dt>AI 비서를 연결하면</dt><dd>연결한 AI 앱이 TEDDY 일정의 제목·날짜·시각·장소·태그와 업무 프로필을 읽고 일정을 넣거나 고쳐요. 직접 만든 일정과 AI 비서가 만든 일정의 메모도 읽을 수 있어요. Brity 쪽지 본문과 원문은 보내지 않아요.</dd></div><div><dt>개인정보 가리기</dt><dd>기본으로 켜진 ‘개인정보 전송 최소화’가 규칙으로 찾은 이름과 연락처를 가려요. 규칙이 놓친 정보는 전송될 수 있어요.</dd></div></dl>
   </div></section>
   <section class="pricing" id="pricing" aria-labelledby="pricing-title">
     <div class="pricing-scene" aria-hidden="true"></div>
@@ -178,13 +205,14 @@
       <summary>브리티 메신저(Brity Messenger) 개발사가 공식 제작한 프로그램인가요?</summary>
       <p>TEDDY는 현직 교사가 업무 편의를 위해 개발한 프로그램으로서 브리티 메신저 개발사가 공식 제작 및 유지보수를 하지 않아요. TEDDY 오류 및 개선사항 문의는 하단의 '<a href="contact.html">개발자 문의</a>'를 눌러 알려주세요.</p>
     </details>
+    <details><summary>Claude나 ChatGPT에게 말해서 일정을 넣을 수 있나요?</summary><p>네. TEDDY 1.1.0부터 설정의 ‘AI 비서 연결’에서 Claude 데스크톱 앱, Claude Code, ChatGPT(Codex) 앱, Gemini(Antigravity)를 연결할 수 있어요. 연결한 AI에게 업무 계획이나 공문을 올리고 “TEDDY에 일정 등록해 줘”라고 말하면 일정이 TEDDY 달력에 들어와요. TEDDY가 꺼져 있어도 AI가 부르면 저절로 켜져요.</p></details>
     <details><summary>TEDDY 이용료는 얼마인가요?</summary><p>TEDDY의 설치와 이용은 무료예요. 선택 기능인 AI 분류에 외부 구독 계정이나 API 키를 연결하면 해당 서비스의 요금이 별도로 적용될 수 있어요.</p></details>
     <details><summary>어떤 PC에서 쓸 수 있나요?</summary><p>Windows 10·11 64비트 PC에서 사용해요. 쪽지를 가져오려면 Brity 메신저 PC 프로그램을 실행하고 로그인해 주세요.</p></details>
     <details><summary>쪽지를 언제 가져오나요?</summary><p>처음에는 자동 동기화가 꺼져 있어요. ‘지금 동기화’를 누르면 열려 있는 Brity 창에서 쪽지를 읽어요. 설정에서 자동 동기화 시각을 정할 수도 있어요.</p></details>
     <details><summary>PC를 바꾸거나 기록을 지우려면요?</summary><p>설정의 ‘데이터 관리’에서 백업 파일을 만들고 다른 PC에서 불러올 수 있어요. 모든 기록을 지우려면 ‘데이터 초기화’를 선택하세요.</p></details>
     <details><summary>구글 캘린더와 연결할 수 있나요?</summary><p>구글 캘린더로 보내기는 준비 중이에요. 현재 버전에서는 TEDDY 안의 달력에서 일정을 확인하고 관리할 수 있어요.</p></details>
   </div></section>
-  <section class="wrap release" id="release" aria-labelledby="release-title"><div><h2 id="release-title">TEDDY 다운로드</h2><p>Windows 10·11 64비트용 설치 파일 · 버전 1.0.1 · 121 MiB</p></div><a class="btn dark" href="download.html#start">TEDDY 다운로드</a></section>
+  <section class="wrap release" id="release" aria-labelledby="release-title"><div><h2 id="release-title">TEDDY 다운로드</h2><p>Windows 10·11 64비트용 설치 파일 · 버전 1.1.0 · 121 MiB</p></div><a class="btn dark" href="download.html#start">TEDDY 다운로드</a></section>
 </main>
 <footer class="site-footer"><div class="wrap"><a class="brand" href="index.html"><img src="bear.svg" width="30" height="28" alt="">TEDDY</a><span>© 2026 TEDDY</span><a href="privacy.html">개인정보 처리방침</a><a href="contact.html">개발자 문의</a></div></footer>
 </body></html>
