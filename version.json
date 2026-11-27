@@ -1,7 +1,7 @@
 {
-  "version": "1.1.0",
-  "download": "https://github.com/easycodingperson/teddy-website/releases/download/v1.1.0/TEDDY-Setup-1.1.0.exe",
-  "sha256": "bf300bcfdbb0261d301948981ad49abd16f64b2dead2ff827915ac2942a9fffb",
-  "size": 126855115,
-  "notes": "AI 비서 연결: Claude·ChatGPT·Gemini에게 말하면 TEDDY에 일정이 등록돼요."
+  "version": "1.2.0",
+  "download": "https://github.com/easycodingperson/teddy-website/releases/download/v1.2.0/TEDDY-Setup-1.2.0.exe",
+  "sha256": "ea7d6a006393da1d3356343f09255920d0109134b6062a7946c8bd54ce877428",
+  "size": 127355381,
+  "notes": "테디 AI(일정 파일 등록·계획 초안), 업무 시작, 일정 알림, AI 연결 한 번으로"
 }
